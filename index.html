@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="menu">
+<li><img src=media/LogoImage.png width=40px height=25px/></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#photos">My Photos</a></li>
+<li><a href="#like">Like</a></li>
+<li><a href="#qrcoder">QR code</a></li>
+<li><a href="#contact">Contact Me</a></li>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>  
+<br/>
+<br/>
+<br/>
+<br/>
+<img src=media/CarlAndBalloons.png width=300 height=400 class="images"/>
+<br/>
+<br/>
+<br/>
+<br/>
+<section id="about" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1><b>About Me</b></h1>
+<p>Hi everyone! <br/> my name is Carl, nice to meet you! <br/>
+  These days, It can be said that i'm a pretty old man. <br/>
+In my youth I was an adventure lover. <br/> <br/>
+After my wife Ellie passed away and the municipality wanted to take my home, <br/>
+ I started an amazing journey together with my home, <br/>
+  with the goal of fulfilling my shared dream with Ellie. <br/>
+  My hobbies - going out into nature, inflating balloons, meeting new people, playing the harmonica.<br/><br/>
+  A character I adored throughout my life - Charles Mantz.<br/>
+Charles Mantz is a famous researcher, who was accused of seeing a skeleton of a giant bird.<br/>
+Charles claimed that he discovered the bird in the waterfalls of paradise located in Venezuela. <br/>
+ Charles swored to return there and capture such a bird alive and prove that the skeleton was not fake.<br/>
+ Ellie also adored Charles.<br/><br/>
+ My favorite composer - Nathan Alterman (of course..)! <br/><br/>
+  My favorite movie - UP: <br/><br/>
+  <iframe width="370" height="295" src="https://www.youtube.com/embed/pkqzFUhGPJg">
+  </iframe>
+</p>
+<br/>
+</section>
+
+<section id="photos" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1><b>My Photos Gallery</b></h1>
+<div class="images-open" id="openedImgBox">
+  <img src="media/CarlAndBalloons.png" id="openedImg">
+  <span onclick="CloseImage()">X</span>
+</div>
+<div class="gallery">
+  <img src="media/CarlAndFriends3.jpg" onclick="OpenImage(this.src)">
+  <img src="media/CarlAndEllie.jpg" onclick="OpenImage(this.src)">
+  <img src="media/OldCarlAndEllie.webp" onclick="OpenImage(this.src)">
+  <img src="media/CarlAndRussell2.jpg" onclick="OpenImage(this.src)">
+  <img src="media/CarlAndFriends2.jpg" onclick="OpenImage(this.src)">
+  <img src="media/CarlAndRussell.png" onclick="OpenImage(this.src)">
+  <img src="media/CarlAndFriends4.jpg" onclick="OpenImage(this.src)">
+  <img src="media/CarlAndFriends.webp" onclick="OpenImage(this.src)">
+</div>
+<br/>
+<br/>
+</section>
+
+<section id="like" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1><b>Give Us A Like</b></h1>
+<div id="facebookLike">
+  <p>If you liked my website, I would love to get your Like...</p><br/>
+  <script async defer crossorigin="anonymous" 
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="LtMCH3Fd"></script>
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" 
+  data-layout="button" data-action="like" data-size="large" data-share="false"></div>
+  <br/>
+<p>Also, you are more than welcome to Like my movie's Facebook page</p><br/>
+<div class="fb-like" data-href="https://www.facebook.com/UpTheMovie" data-width="" 
+data-layout="button" data-action="like" data-size="large" data-share="false"></div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+<br/>
+<br/>
+<h1><b>Scan My Code</b></h1>
+<p>If you want to get back to my site easily, you only need to scan the following QR code:</p>
+<img src=media/QRcode.png width=250 height=250 class="images"/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1><b>Contact Me</b></h1>
+<form class="FormContainer" action="https://formsubmit.co/naamaba133@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New Email For Your Site!">
+  <input type="hidden" name="_next" value="https://web-development-environments-2022.github.io/315821991/">
+    <input id="UserMail" type="email" name="email" placeholder="Enter Your Email" required>
+    <input id="username" type="text" name="name" placeholder="Enter Your Name" required>
+    <div id="TextArea">
+      <textarea id="textMessage" name="message" placeholder="Your Message..."></textarea>
+    </div>
+    <select id="emojiSelection" onchange="EmojiAddition()">
+      <option value="&#128156">&#128156</option>
+      <option value="&#127881">&#127881</option>
+      <option value="&#129419">&#129419</option>
+      <option value="&#128571">&#128571</option>
+      <option value="&#128525">&#128525</option>
+      <option value="&#128517">&#128517</option>
+      <option value="&#128513">&#128513</option>
+      <option value="&#128175">&#128175</option>
+      <option value="&#128131">&#128131</option>
+      <option value="&#127882">&#127882</option>
+    </select><br/>
+    <button id="submitBut" type="submit">Send</button>
+</form>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+<div id="Copyright">
+  <li id="MyName">© Naama Baruch</li>
+  <li>
+    <a href="https://github.com/Naama133">
+      <img src="media/GitHubSymbole.png" width="15px" height="15px"></a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/naama-baruch-b2b59a1b7/">
+      <img src="media/LinkedInSymbole.png" width="30px" height="17px"></a>
+  </li>
+</div>
+
+<script type="text/javascript">
+
+  var openedImgBox = document.getElementById("openedImgBox");
+  var openedImg = document.getElementById("openedImg");
+
+  function OpenImage(image){
+    openedImgBox.style.display = "flex";
+    openedImg.src = image;
+  }
+
+  function CloseImage()
+  {
+    openedImgBox.style.display = "none";
+  }
+</script>
+
+<script type="text/javascript">
+  function EmojiAddition()
+  {
+    var selectedEmoji = document.getElementById("emojiSelection").value;
+    document.getElementById("textMessage").value += selectedEmoji;
+  }
+</script>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
